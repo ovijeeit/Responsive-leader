@@ -1,3 +1,100 @@
-*body{
-    background-color: brown;
+ body{
+   background-color: bisque;
+  
+ }
+ .container{
+   background-color:#ffffff;
+   padding: 100px;
+   margin-top: 21px;
+   margin-right: 20px;
+   border-radius: 5px;
 }
+ main{
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+   align-items: center;
+ }
+ 
+ .players{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+   grid-row-gap: 30px; 
+ }
+ .player img{
+    width: 56px;
+    height: 56px;
+ }
+ .player{
+    display: flex;
+    text-align: center;
+ }
+ .section-title{
+   color: blue;
+ }
+ hr{
+   border: 1px solid saddlebrown;
+   margin-bottom: 40px;
+ }
+
+ /* top blogs styyle */
+ .Blog{
+   display: flex;
+ }
+ .blog-info{
+   margin-left: 19px;
+ }
+ .Blog .themble img{
+   width: 177px;
+   height: 177px;
+ }
+ .blog-author a{
+   text-decoration: none;
+   font-size: 16px;
+   color: red;
+
+ }
+ .blogs{
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   gap: 20px;
+ }
+ /* couses*/
+  
+ .course .courses img{
+  width: 244px;
+  height: 104px;
+ }
+ .courses{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+ 
+ }
+ /* @media Quary  */
+ @media  only screen and  (max-width:688px) {
+  .container{
+    width: 100px;
+  }
+  .players, .blogs{
+    grid-template-columns: repeat(1,1fr);
+  }
+  .player, .Blog{
+    flex-direction: column;
+  }
+   .courses{
+    display: none;
+  }
+ }
+
+ /* .course */
+ @media  only screen and (min-width:688px) and(max-width:992px) {
+  .container{
+    width: 100px;
+  }
+  .players .courses{
+    grid-template-rows: repeat(2, 1fr);
+  }
+  .blogs{
+    grid-template-rows: repeat(1,1fr);
+  }
+ }
